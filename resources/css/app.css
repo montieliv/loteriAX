@@ -1,0 +1,42 @@
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.image-table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    padding: 5px;
+}
+
+.responsive-imagex {
+    width: 8%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Zoom effect on hover */
+.image-container:hover .responsive-image {
+    transform: scale(1.5);
+    position: relative;
+    z-index: 1000;
+}
+
+/* Optional: Add media queries for different screen sizes */
+@media (max-width: 768px) {
+    .image-container:hover .responsive-image {
+        transform: scale(1.3);
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container:hover .responsive-image {
+        transform: scale(1.2);
+    }
+}
